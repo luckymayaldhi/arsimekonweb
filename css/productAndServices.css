@@ -1,0 +1,309 @@
+/* ===== Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+@font-face {
+    font-family: Myriad;
+    src: url("../assets/fonts/Myriad/Myriad.otf");
+}
+
+/* ===== Roots ===== */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #F08431;
+    --clr-secondary: #233450;
+    --clr-text-black: #000;
+    --clr-text-white: #fff;
+    --clr-secondary-background: #9C9C9C;
+}
+
+body {
+    font-family: Myriad;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ===== Global Styling ===== */
+.title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 5px;
+    color: var(--clr-text-black);
+    border-bottom: 3px solid var(--clr-primary);
+    display: inline;
+}
+
+.sub-title {
+    font-family: Myriad;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--clr-text-black);
+}
+
+.cta {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.4rem 1.5rem !important;
+    letter-spacing: 1px;
+    width: 100px;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+}
+
+.cta:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-text-white);
+    text-decoration: none;
+}
+
+/* ===== CSS Styling ===== */
+.jumbotron {
+    background-image: url('../assets/img/productAndServices/background-jumbotron.png');
+    background-size: cover;
+}
+
+.display-4 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: var(--clr-secondary);
+    display: inline-block;
+    border-bottom: 4px solid var(--clr-primary);
+}
+
+.hvac,
+.plumbing,
+.fire-fighting,
+.electrical,
+.electronics,
+.specific-system,
+.it-products,
+.hotel-equipment {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hvac {
+    margin: 50px 0;
+}
+
+.sub-title {
+    margin: 30px 0;
+}
+
+.plumbing .caption {
+    margin-top: 30px;
+}
+
+.electrical .caption {
+    margin-top: 30px;
+}
+
+.specific-system .caption {
+    margin-top: 30px;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/productAndServices/image-7.png");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.it-products .caption {
+    margin-top: 30px;
+}
+
+.button-back {
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+.hvac,
+.plumbing,
+.fire-fighting,
+.electrical,
+.electronics,
+.specific-system,
+.it-products,
+.hotel-equipment {
+    text-align: left;
+}
+
+    .hvac .caption {
+        display: block;
+        top: 50px;
+    }
+
+    .hvac img {
+        width: 100%;
+    }
+
+    .plumbing .caption {
+        display: block;
+        top: 30px;
+    }
+
+    .plumbing img {
+        width: 100%;
+    }
+
+    .fire-fighting .caption {
+        display: block;
+        top: 40px;
+    }
+
+    .fire-fighting img {
+        width: 100%;
+    }
+
+    .electrical .caption {
+        display: block;
+        top: -5px;
+    }
+
+    .electrical img {
+        width: 100%;
+    }
+
+    .electronics .caption {
+        display: block;
+        top: 20px;
+    }
+
+    .electronics img {
+        width: 100%;
+    }
+
+    .specific-system .caption {
+        display: block;
+        top: 25px;
+    }
+
+    .specific-system img {
+        width: 100%;
+    }
+
+    .it-products .caption {
+        display: block;
+        top: 20px;
+    }
+
+    .it-products img {
+        width: 100%;
+    }
+
+    .hotel-equipment .caption {
+        display: block;
+        top: 50px;
+    }
+
+    .hotel-equipment img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .hvac .caption {
+        display: block;
+        top: 80px;
+    }
+
+    .plumbing .caption {
+        display: block;
+        top: 60px;
+    }
+
+    .fire-fighting .caption {
+        display: block;
+        top: 80px;
+    }
+
+    .electrical .caption {
+        display: block;
+        top: 40px;
+    }
+
+    .electronics .caption {
+        display: block;
+        top: 60px;
+    }
+
+    .specific-system .caption {
+        display: block;
+        top: 70px;
+    }
+
+    .it-products .caption {
+        display: block;
+        top: 70px;
+    }
+
+    .hotel-equipment .caption {
+        display: block;
+        top: 90px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hvac .caption {
+        top: 110px;
+    }
+
+    .plumbing .caption {
+        top: 110px;
+    }
+
+    .fire-fighting .caption {
+        top: 120px;
+    }
+
+    .electrical .caption {
+        top: 80px;
+    }
+
+    .electronics .caption {
+        top: 100px;
+    }
+
+    .specific-system .caption {
+        top: 100px;
+    }
+
+    .hero-text {
+        top: 290px;
+    }
+
+    .hero-text .desc {
+        font-size: 26px;
+    }
+
+    .it-products .caption {
+        top: 100px;
+    }
+
+    .hotel-equipment .caption {
+        top: 130px;
+    }
+}

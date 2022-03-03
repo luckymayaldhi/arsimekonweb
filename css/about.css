@@ -1,0 +1,197 @@
+/* ===== Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+@font-face {
+    font-family: Myriad;
+    src: url("../assets/fonts/Myriad/Myriad.otf");
+}
+
+/* ===== Roots ===== */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #F08431;
+    --clr-secondary: #233450;
+    --clr-text-black: #000;
+    --clr-text-white: #fff;
+    --clr-secondary-background: #9C9C9C;
+}
+
+body {
+    font-family: Myriad;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ===== Global Styling ===== */
+.title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: var(--clr-text-black);
+    border-bottom: 3px solid var(--clr-primary);
+    display: inline;
+}
+
+.sub-title {
+    font-family: Myriad;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--clr-text-black);
+}
+
+.cta {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.4rem 1.5rem !important;
+    letter-spacing: 1px;
+    width: 100px;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+}
+
+.cta:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-text-white);
+    text-decoration: none;
+}
+
+/* ===== CSS Styling ===== */
+.jumbotron {
+    background-image: url('../assets/img/about/background-jumbotron.png');
+    background-size: cover;
+}
+
+.display-4 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: var(--clr-text-white);
+}
+
+.jumbotron h1 {
+    display: inline-block;
+    border-bottom: 4px solid var(--clr-primary);
+}
+
+.jumbotron hr {
+    width: 140px;
+}
+
+.about-arsimekon {
+    text-align: center;
+    padding: 40px;
+    margin: 50px 0;
+}
+
+.about-arsimekon img {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visi {
+    background-color: var(--clr-primary);
+    padding: 20px;
+}
+
+.visi-heading {
+    display: block;
+    top: 0;
+}
+
+.visi img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -130px;
+    margin-bottom: 30px;
+}
+
+.misi {
+    margin-top: 30px;
+}
+
+.misi-heading {
+    display: block;
+}
+
+.misi img {
+    display: block;
+    border-radius: 10px;
+}
+
+.button-back {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 576px) {
+    .visi img {
+        margin-top: -170px;
+    }
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 42px;
+    }
+
+    .jumbotron hr {
+        width: 165px;
+    }
+
+    .visi img {
+        margin-top: -130px;
+    }
+}
+
+@media (min-width: 992px) {
+    .display-4 {
+        font-size: 50px;
+    }
+
+    .visi img {
+        margin-top: -130px;
+        margin-bottom: -22px;
+    }
+
+    .visi-heading {
+        top: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .display-4 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .visi img {
+        position: absolute;
+        top: -18px;
+        width: 80%;
+    }
+}
