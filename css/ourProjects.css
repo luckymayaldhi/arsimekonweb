@@ -34,6 +34,7 @@ body {
 /* ===== Global Styling ===== */
 .jumbotron .logo img {
     width: 320px;
+    margin-left: 20px;
 }
 
 section {
@@ -290,6 +291,7 @@ footer .mail {
 footer .social-media h5 {
     margin-top: 50px;
     font-weight: bold;
+    margin-left: 12px;
 }
 
 @media (min-width: 576px) {

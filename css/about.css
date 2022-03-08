@@ -37,6 +37,7 @@ body {
     font-weight: bold;
     font-size: 28px;
     letter-spacing: 1px;
+    padding-bottom: 5px;
     color: var(--clr-text-black);
     border-bottom: 3px solid var(--clr-primary);
     display: inline;

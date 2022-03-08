@@ -37,6 +37,7 @@ body {
     font-weight: bold;
     font-size: 28px;
     letter-spacing: 1px;
+    padding-bottom: 5px;
     color: var(--clr-text-black);
     border-bottom: 3px solid var(--clr-primary);
     display: inline;
@@ -111,6 +112,15 @@ body {
     height: 30px;
 }
 
+/* .scrolled-down{ 
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+} */
+
+
 .nav-link {
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
@@ -120,12 +130,19 @@ body {
     margin-right: 20px;
     display: inline-block;
     position: relative;
+    padding-bottom: 0.5px;
+    transition: all 200ms linear;
+} 
+
+.nav-item:hover .nav-link {
+    color: var(--clr-primary) !important;
 }
 
 .navbar-toggler {
     float: right;
     border: none;
     padding-right: 0;
+    display: block;
 }
 
 .navbar-toggler:active,
@@ -173,6 +190,39 @@ body {
 
 .carousel-item img {
     height: 50vh;
+}
+
+.carousel-item:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-caption h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.carousel-caption p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.carousel-caption h1 span {
+    color: var(--clr-primary);
 }
 
 .about {
@@ -252,7 +302,7 @@ body {
     height: 50vh;
     border-radius: 20px;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -376,11 +426,20 @@ footer .mail {
 footer .social-media h5 {
     margin-top: 50px;
     font-weight: bold;
+    margin-left: 12px;
 }
 
 @media (min-width: 576px) {
     .carousel-item img {
         height: 65vh;
+    }
+
+    .carousel-caption .main {
+        font-size: 36px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
     }
 
     .about-panel .about-sc-thumbnail img {
@@ -404,6 +463,14 @@ footer .social-media h5 {
 @media (min-width: 768px) {
     .carousel-item img {
         height: 90vh;
+    }
+
+    .carousel-caption .main {
+        font-size: 46px;
+    }
+
+    .carousel-caption p {
+        font-size: 18px;
     }
 
     .about-panel .about-sc-thumbnail img {
@@ -432,6 +499,18 @@ footer .social-media h5 {
 @media (min-width: 992px) {
     .carousel-item img {
         height: 100vh;
+    }
+
+    .carousel-caption .first-slide{
+        text-align: left;
+    }
+
+    .carousel-caption .main {
+        font-size: 60px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
     }
 
     .about {
@@ -507,6 +586,16 @@ footer .social-media h5 {
 }
 
 @media (min-width: 1200px) {
+    .carousel-caption .second-slide h1 {
+        font-size: 80px;
+        letter-spacing: 2px;
+    }
+
+    .carousel-caption .third-slide h1 {
+        font-size: 80px;
+        letter-spacing: 2px;
+    }
+
     .about .about-sc-caption {
         top: 100px;
     }
