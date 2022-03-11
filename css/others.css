@@ -24,13 +24,13 @@
     --clr-secondary-background: #9C9C9C;
 }
 
-body {
+html, body {
     font-family: Myriad;
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    max-width: 100%;
 }
-
 /* ===== Global Styling ===== */
 .jumbotron .logo img {
     width: 320px;
