@@ -197,7 +197,7 @@ html, body {
 .carousel-item:before {
     position: absolute;
     content: '';
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.15);
     top: 0;
     left: 0;
     height: 100%;
@@ -216,6 +216,7 @@ html, body {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px #000;
 }
 
 .carousel-caption p {
@@ -223,6 +224,7 @@ html, body {
     font-weight: 700;
     letter-spacing: 0.5px;
     color: var(--clr-text-white);
+    text-shadow: 2px 2px 8px #000;
 }
 
 .carousel-caption h1 span {
@@ -432,6 +434,8 @@ footer .social-media h5 {
     font-weight: bold;
     margin-left: 12px;
 }
+
+/* ===== Responsive ===== */
 
 @media (min-width: 576px) {
     .carousel-item img {
