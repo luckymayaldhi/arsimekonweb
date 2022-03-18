@@ -182,6 +182,15 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    background-image: url(../assets/img/logo-shadow.png);
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position-y: 100%;
+    background-position-x: 100%;
+}
+
+footer img {
+    margin: 0 0;
 }
 
 footer .office {
@@ -190,6 +199,12 @@ footer .office {
 
 footer .section-office {
     margin-top: 50px;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+footer .section-operation-office {
+    margin-top: 20px;
     margin-left: 35px;
     font-weight: bold;
 }
@@ -216,10 +231,18 @@ footer .mail {
     margin-top: 10px;
 }
 
+footer .social-media a {
+    margin-left: 30px;
+}
+
 footer .social-media h5 {
     margin-top: 50px;
     font-weight: bold;
-    margin-left: 12px;
+    margin-left: 33px;
+}
+
+footer span {
+    letter-spacing: 0.8px;
 }
 
 @media (min-width: 576px) {
@@ -233,6 +256,10 @@ footer .social-media h5 {
 
     .hero-image {
         height: 60vh;
+    }
+
+    footer {
+        background-size: 25rem;
     }
 }
 
@@ -251,6 +278,11 @@ footer .social-media h5 {
 
     .hero-text p {
         font-size: 16px;
+    }
+
+    footer {
+        padding: 30px;
+        background-size: 30rem;
     }
 
     footer .office {
@@ -275,8 +307,28 @@ footer .social-media h5 {
         padding: 100px 0;
     }
 
+    footer .logo {
+        margin-left: 50px;
+    }
+
+    footer .social-media a {
+        margin-left: 5px;
+    }
+
+    footer .social-media h5 {
+        margin-left: 2px;
+    }
+
     footer .section-office {
         margin-top: 0;
+    }
+
+    footer .section-operation-office {
+        margin-top: 15px;
+    }
+
+    footer .contact-arsimekon {
+        margin-left: 5px;
     }
 
     footer .section-contact {
@@ -291,5 +343,21 @@ footer .social-media h5 {
 @media (min-width: 1200px) {
     .jumbotron .logo img {
         width: 640px;
+    }
+
+    footer .contact-arsimekon {
+        margin-left: 60px;
+    }
+
+    footer .social {
+        margin-left: -60px;
+    }
+
+    footer .social-media a {
+        margin-left: 20px;
+    }
+
+    footer .social-media h5 {
+        margin-left: 10px;
     }
 }

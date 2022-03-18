@@ -197,7 +197,7 @@ html, body {
 .carousel-item:before {
     position: absolute;
     content: '';
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.10);
     top: 0;
     left: 0;
     height: 100%;
@@ -395,6 +395,15 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    background-image: url(../assets/img/logo-shadow.png);
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position-y: 100%;
+    background-position-x: 100%;
+}
+
+footer img {
+    margin: 0 0;
 }
 
 footer .office {
@@ -403,6 +412,12 @@ footer .office {
 
 footer .section-office {
     margin-top: 50px;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+footer .section-operation-office {
+    margin-top: 20px;
     margin-left: 35px;
     font-weight: bold;
 }
@@ -429,10 +444,18 @@ footer .mail {
     margin-top: 10px;
 }
 
+footer .social-media a {
+    margin-left: 30px;
+}
+
 footer .social-media h5 {
     margin-top: 50px;
     font-weight: bold;
-    margin-left: 12px;
+    margin-left: 33px;
+}
+
+footer span {
+    letter-spacing: 0.8px;
 }
 
 /* ===== Responsive ===== */
@@ -454,6 +477,10 @@ footer .social-media h5 {
         width: 60%;
     }
 
+    .counters {
+        margin: 10px 0;
+    }
+
     .fas {
         font-size: 60px;
     }
@@ -465,6 +492,10 @@ footer .social-media h5 {
 
     .maps iframe {
         height: 300px;
+    }
+
+    footer {
+        background-size: 25rem;
     }
 }
 
@@ -494,6 +525,11 @@ footer .social-media h5 {
         height: 255px;
     }
 
+    footer {
+        padding: 30px;
+        background-size: 30rem;
+    }
+
     footer .office {
         margin-top: 0;
     }
@@ -501,7 +537,6 @@ footer .social-media h5 {
     footer .phone {
         margin-top: 0;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -551,17 +586,23 @@ footer .social-media h5 {
         width: 100%;
     }
 
+    .counters {
+        margin: 100px 0;
+        padding: 0 45px;
+    }
+
     .fas {
         font-size: 70px;
+    }
+
+    .numbers {
+        font-size: 30px;
     }
 
     .our-projects .carousel-item {
         height: 70vh;
     }
 
-    .counters {
-        margin: 130px 0;
-    }
 
     .iso-bottom p {
         text-align: left;
@@ -580,8 +621,28 @@ footer .social-media h5 {
         padding: 100px 0;
     }
 
+    footer .logo {
+        margin-left: 50px;
+    }
+
+    footer .social-media a {
+        margin-left: 5px;
+    }
+
+    footer .social-media h5 {
+        margin-left: 2px;
+    }
+
     footer .section-office {
         margin-top: 0;
+    }
+
+    footer .section-operation-office {
+        margin-top: 15px;
+    }
+
+    footer .contact-arsimekon {
+        margin-left: 5px;
     }
 
     footer .section-contact {
@@ -615,9 +676,37 @@ footer .social-media h5 {
     .services .caption {
         margin-top: 25px;
     }
+
+    .counters {
+        padding: 0 150px;
+    }
+
+    .fas {
+        font-size: 80px;
+    }
+
+    .numbers {
+        font-size: 40px;
+    }
     
     .certificate img {
         width: 300px;
         height: 420px;
+    }
+
+    footer .contact-arsimekon {
+        margin-left: 60px;
+    }
+
+    footer .social {
+        margin-left: -60px;
+    }
+
+    footer .social-media a {
+        margin-left: 20px;
+    }
+
+    footer .social-media h5 {
+        margin-left: 10px;
     }
 }
